@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+   function calcularMedia(n1, n2, n3, tipo) {
+   return tipo === 'A' ? (n1 + n2 + n3) / 3 : (n1 * 5 + n2 * 3 + n3 * 2) / 10;
+}
+   function executar() {
+   let n1 = parseFloat(prompt("Nota 1:"));
+   let n2 = parseFloat(prompt("Nota 2:"));
+   let n3 = parseFloat(prompt("Nota 3:"));
+   let tipo = prompt("Digite 'A' para média aritmética ou 'P' para média ponderada:");
+   alert(`A média é: ${calcularMedia(n1, n2, n3, tipo)}`);
+}
+   executar();
+    </script>
+</body>
+</html>

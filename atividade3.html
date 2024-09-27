@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+   function criarNumero(n1, n2) {
+   let primeiroDigito = parseInt(n1.toString()[0]);
+   let ultimoDigito = n2 % 10; 
+   let n3 = primeiroDigito * 10 + ultimoDigito; 
+   return n3; 
+}
+   function executar() {
+   let n1 = parseInt(prompt("Digite o primeiro número (entre 10 e 99):"));
+   let n2 = parseInt(prompt("Digite o segundo número (entre 10 e 99):"));
+   if (n1 < 10 || n1 > 99) {
+       alert("O primeiro número deve estar entre 10 e 99.");
+       return; 
+   }
+   if (n2 < 10 || n2 > 99) {
+       alert("O segundo número deve estar entre 10 e 99."); 
+       return; 
+   }
+   let n3 = criarNumero(n1, n2); 
+   alert(`O novo número n3 é: ${n3}`); 
+}
+   executar();
+    </script>
+</body>
+</html>

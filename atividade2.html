@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+   function elevar(X, Z) {
+   let resultado = 1; 
+   for (let i = 0; i < Z; i++) {
+       resultado *= X; 
+   }
+   return resultado; 
+}
+   function executar() {
+   let X = parseFloat(prompt("Digite o valor de X:")); 
+   let Z = parseInt(prompt("Digite o valor de Z:"));   
+   let resultado = elevar(X, Z); 
+   alert(`${X} elevado a ${Z} é ${resultado}`); 
+}
+   executar();
+    </script>
+</body>
+</html>
